@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="<?php echo base_url(); ?>css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="header">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="5" bgcolor="#0066CC"></td>
+      </tr>
+      <tr>
+        <td height="105" background="<?php echo base_url(); ?>images/banner_gb.jpg">
+        		<div class="banner">
+             	<div class="logo"><img src="<?php echo base_url(); ?>images/logo1.png" width="356" height="105"  alt=""/></div>
+                <div class="menu">
+                
+                </div>
+              
+          </div>
+        </td>
+      </tr>
+   </table>
+
+
+</div>
+<div style="background:#E5E5E5">
+	<div style="background:url(<?php echo base_url(); ?>images/hr_bg.png); height:7px;"></div> 
+	<div class="pic">
+    <img src="<?php echo base_url(); ?>images/ad.png" width="1002" height="300"  alt=""/> </div>
+    <div class="article">
+    		<div class="art_left">
+            <table width="100" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="<?php echo base_url(); ?>images/title_zxtz.png" width="653" height="38"  alt=""/></td>
+              </tr>
+              <tr>
+                <td height="150" valign="top">
+                		
+           		  <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                      </div>
+                  <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                      </div>
+                      <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                      </div>
+                  <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                  </div>
+                      <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                      </div>
+                  <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                  </div>
+                      <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                      </div>
+                  <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                  </div>
+                      <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                      </div>
+                  <div class="list_left">
+                        <div class="font_title"><a href="#">－这个是标题</a></div><div class="date">2016-01-26</div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </div>
+      <div class="art_right">
+        <form method="post" action="<?php echo site_url().'/user/login'; ?>">
+        		<table width="100" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><img src="<?php echo base_url(); ?>images/title_right.png" width="328" height="38"  alt=""/></td>
+                  </tr>
+                  <tr>
+                    <td height="200" valign="top">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="login_box">
+                        <tr>
+                          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="80" height="50" style="text-align: right; font-size:14px">警  号：</td>
+                              <td>
+                              <input name="YHJH" type="text" required class="input" id="textfield" value="<?php echo set_value('YHJH'); ?>"></td>
+                            </tr>
+                            <tr>
+                              <td height="50" style="text-align: right; font-size:14px">密  码：</td>
+                              <td>
+                              <input type="password"  name="YHMM" id="password" class="input"></td>
+                            </tr>
+                            <tr>
+                              
+                              <td colspan=2 align="center">
+                                 <?php echo form_error('YHJH','<span style=color:red;font-size:14px;>','</span>');?>
+                                <?php echo form_error('YHMM','<span style=color:red;font-size:14px;>','</span>');?>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="50" colspan="2" style="text-align: center"><input type="submit" name="button"  value="登    录" class="button100">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="button" value="首次使用注册" class="button100"> </td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+               </table>
+        </form>
+        </div>
+    </div>
+</div>
+<div id="footer">
+	<p class="foot_text">汕头出入境边防检查总站&nbsp;&nbsp;&nbsp;
+    任何疑问联系总站政治处：88383026</p>
+</div>
+
+</body>
+</html>

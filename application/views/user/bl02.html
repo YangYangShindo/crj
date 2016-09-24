@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="<?php echo base_url(); ?>css/main.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url(); ?>images/gray_form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background:#EBEBEB" onLoad="MM_preloadImages('<?php echo base_url(); ?>images/1.png')">
+<div id="header">
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="80" align="center" bgcolor="#0066CC">
+        <table width="1000" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="<?php echo base_url(); ?>images/htlogo.png" width="414" height="80"  alt=""/></td>
+            <td align="right" style="color:#ffffff">
+            	杨睿，您好！［退出登录］
+            </td>
+          </tr>
+        </table>
+</td>
+      </tr>
+      
+   </table>
+
+<div style="background:url(<?php echo base_url(); ?>images/hr_bg.png); height:7px;"></div> 
+</div>
+<div class="article">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top" bgcolor="#F7F7F7">
+    	<div class="basic-grey900" align="left">
+       	  <h1>第一步：请确保以下资料与你此次申请资料相符
+            </h1>
+          <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="middle">
+            
+            <form action="<?php echo site_url(); ?>/apply/update_bl02" method="post" class="basic-grey">
+            <h1>
+            <span style="color:#900">以下信息若有错误，请直接修改，系统将同步更新你的个人资料库。</span>
+            </h1>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="52%">
+      <label>
+            <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 :</span>
+            <input id="name" type="text" name="YHXM" value="<?php echo $user_info[0]['YHXM']; ?>" placeholder="填写您的姓名" readonly />
+            </label>
+    </td>
+    <td width="48%">
+      <label>
+            <span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别 :</span><select name="YHXB">
+            <?php echo '<option value="'.$user_info[0]['YHXB'].'">'.$user_info[0]['YHXB'].'</option>'; ?>
+            <option value="男">男</option>
+            <option value="女">女</option>
+            </select>
+       </label>
+    </td>
+    </tr>
+  <tr>
+    <td>
+      <label>
+            <span>出生年月 :<br>
+            （如：19901210）</span>
+            <input id="name" type="text" name="YHCSNY" value="<?php echo $user_info[0]['YHCSNY']; ?>" placeholder="出生年月（如：19901010）" />
+       </label>
+    </td>
+    <td>
+      <label>
+            <span>工作时间 :<br>
+            （如：19901210）</span>
+            <input id="name" type="text" name="YHGZSJ" value="<?php echo $user_info[0]['YHGZSJ']; ?>" placeholder="请填写您参加工作的时间" />
+       </label>
+       
+    </td>
+    </tr>
+  <tr>
+    <td>
+      <label>
+            <span>婚姻状况 :</span><select name="YHHY">
+            <?php echo '<option value="'.$user_info[0]['YHHY'].'">'.$user_info[0]['YHHY'].'</option>'; ?>
+            <option value="未婚">未婚</option>
+            <option value="已婚">已婚</option>
+            </select>
+       </label>
+    </td>
+    <td><label>
+            <span>联系方式 :</span>
+            <input id="name" type="text" name="YHDH" value="<?php echo $user_info[0]['YHDH']; ?>" placeholder="请填写您的手机号码" />
+       </label>
+     </td>
+    </tr>
+  <tr>
+    <td>
+      <label>
+            <span>工作单位 :</span>
+            <input id="name" type="text" name="YHDW" value="<?php echo $user_info[0]['YHDW']; ?>" placeholder="请填写您当前的工作单位" />
+       </label>
+    </td>
+    <td><label>
+            <span>职务职级 :</span>
+            <input id="name" type="text" name="YHZJ" value="<?php echo $user_info[0]['YHZJ']; ?>" placeholder="请填写您的职务或级别" />
+            </label>
+    </td>
+    </tr>
+</table>
+          
+            
+            <div style="color:red; margin-left:10px;">
+              <?php echo validation_errors(); ?>
+            </div>
+            <span>&nbsp;</span>
+            <input type="submit" class="button" value="确认提交" />
+            </label>
+            </form>
+                </td>
+              </tr>
+            </table>
+    	</div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+    </td>
+    </tr>
+</table>
+	
+</div>
+<div id="footer">
+	<p class="foot_text">汕头出入境边防检查总站&nbsp;&nbsp;&nbsp;
+    任何疑问联系总站政治处：88383026</p>
+</div>
+
+</body>
+</html>

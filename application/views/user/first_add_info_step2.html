@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="<?php echo base_url(); ?>css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body style="background:#EBEBEB" onLoad="MM_preloadImages('<?php echo base_url(); ?>images/1.png')">
+<div id="header">
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="80" align="center" bgcolor="#0066CC">
+        <table width="1000" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="<?php echo base_url(); ?>images/htlogo.png" width="414" height="80"  alt=""/></td>
+            <td align="right" style="color:#ffffff">
+            	杨睿，您好！［退出登录］
+            </td>
+          </tr>
+        </table>
+</td>
+      </tr>
+      
+   </table>
+
+<div style="background:url(<?php echo base_url(); ?>images/hr_bg.png); height:7px;"></div> 
+</div>
+<div id="main">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top" bgcolor="#F7F7F7">
+    	
+       	  
+          <table width="900" border="0" align="center" cellpadding="0" cellspacing="0" style="color:#666">
+              <tr>
+                <td valign="middle">
+                <form action="<?php echo site_url(); ?>/user/update_info_02" method="post" >
+                <h2 class="h2_title">第二步：请填写家庭成员资料</h2>
+                
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                
+                  <tr>
+                    <td width="40" height="40" align="center">序</td>
+                    <td width="80" align="center">关系</td>
+                    <td width="90" align="center">姓名</td>
+                    <td width="60" align="center">年龄</td>
+                    <td align="center">工作单位及职位</td>
+                  </tr>
+                  <tr>
+                    <td height="40" align="center">1</td>
+                    <td align="center"><input name="CYGX1" type="text" class="input_form" id="textfield" size="10" value="<?php echo set_value('CYGX1'); ?>"></td>
+                    <td align="center"><input name="CYXM1" type="text" class="input_form" id="textfield2" size="10" value="<?php echo set_value('CYXM1'); ?>"></td>
+                    <td align="center"><input name="CYNL1" type="text" class="input_form" id="textfield3" size="10" value="<?php echo set_value('CYNL1'); ?>"></td>
+                    <td align="left"><input name="CYDW1" type="text" class="input_form" id="textfield4" size="70" value="<?php echo set_value('CYDW1'); ?>"></td>
+                  </tr>
+                  <tr>
+                    <td height="40" align="center">2</td>
+                    <td align="center"><input name="CYGX2" type="text" class="input_form" id="textfield5" size="10" value="<?php echo set_value('CYGX2'); ?>"></td>
+                    <td align="center"><input name="CYXM2" type="text" class="input_form" id="textfield6" size="10" value="<?php echo set_value('CYXM2'); ?>"></td>
+                    <td align="center"><input name="CYNL2" type="text" class="input_form" id="textfield7" size="10" value="<?php echo set_value('CYNL2'); ?>"></td>
+                    <td align="left"><input name="CYDW2" type="text" class="input_form" id="textfield4" size="70" value="<?php echo set_value('CYDW2'); ?>"></td>
+                  </tr>
+                  <tr>
+                    <td height="40" align="center">3</td>
+                    <td align="center"><input name="CYGX3" type="text" class="input_form" id="textfield9" size="10"></td>
+                    <td align="center"><input name="CYXM3" type="text" class="input_form" id="textfield10" size="10"></td>
+                    <td align="center"><input name="CYNL3" type="text" class="input_form" id="textfield11" size="10"></td>
+                    <td align="left"><input name="CYDW3" type="text" class="input_form" id="textfield4" size="70"></td>
+                  </tr>
+                  <tr>
+                    <td height="40" align="center">&nbsp;</td>
+                    <td height="60" align="center"><input type="submit"  class="button_red" value="提 交" /></td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                    <td align="center">&nbsp;</td>
+                  </tr>
+                </table>
+                </form>
+                <div style="color:red; margin-left:10px;">
+                  <?php echo validation_errors(); ?>
+                </div>
+              </td>
+              </tr>
+            </table>
+    		
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+    </td>
+    </tr>
+</table>
+	
+</div>
+<div id="footer">
+	<p class="foot_text">汕头出入境边防检查总站&nbsp;&nbsp;&nbsp;
+    任何疑问联系总站政治处：88383026</p>
+</div>
+
+</body>
+</html>

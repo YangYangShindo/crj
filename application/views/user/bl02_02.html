@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="<?php echo base_url(); ?>css/main.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url(); ?>images/gray_form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background:#EBEBEB" onLoad="MM_preloadImages('<?php echo base_url(); ?>images/1.png')">
+<div id="header">
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="80" align="center" bgcolor="#0066CC">
+        <table width="1000" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="<?php echo base_url(); ?>images/htlogo.png" width="414" height="80"  alt=""/></td>
+            <td align="right" style="color:#ffffff">
+            	杨睿，您好！［退出登录］
+            </td>
+          </tr>
+        </table>
+</td>
+      </tr>
+      
+   </table>
+
+<div style="background:url(<?php echo base_url(); ?>images/hr_bg.png); height:7px;"></div> 
+</div>
+<div class="article">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top" bgcolor="#F7F7F7">
+    	<div class="basic-grey900" align="left">
+       	  <h1>第二步：申请资料填写
+            </h1>
+          <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="middle">
+                <form action="<?php echo site_url(); ?>/apply/update_bl02_02" method="post" class="basic-grey">
+            <h1><label>
+            申请类型 :
+            <select name="QZBLLX">
+            <option value="0" <?php echo  set_select('QZBLLX', '0');?> >0-提前办理签证（注）</option>
+            <option value="1" <?php echo  set_select('QZBLLX', '1');?> >1-办理签证（注）后直接出行</option>
+            </select>
+            </label>
+            <span>注：出行时间与当前时间相差超过<span style="color:#900">三个月</span>以上的，选择“提前办理签证（注）”项，办完后需及时归还证件</span>
+            </h1>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%">
+    	<label>
+            <span>目的地 :</span>
+            <input id="name" type="text" name="NMDD" value="<?php echo set_value('NMDD'); ?>" placeholder="填写拟前往国家（地区）" />
+            </label>
+    </td>
+    <td>
+    	<label>
+            <span>事&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由 :</span>
+            <select name="CXSY">
+            <option value="旅游" <?php echo  set_select('CXSY', '旅游');?> >旅游</option>
+            <option value="探亲" <?php echo  set_select('CXSY', '探亲');?> >探亲</option>
+            </select>
+       </label>
+    </td>
+    </tr>
+  <tr>
+    <td>
+    	<label>
+            <span>拟出行时间 :<br>
+            （如：20151210）</span>
+            <input id="name" type="text" name="NCSJ" value="<?php echo set_value('NCSJ'); ?>" placeholder="填写拟出行时间（如：20160101）" />
+       </label>
+    </td>
+    <td>
+    	<label>
+            <span>拟归来时间 :<br>
+            （如：20151210）</span>
+            <input id="name" type="text" name="NHSJ" value="<?php echo set_value('NHSJ'); ?>" placeholder="填写拟回国时间（如：20160101）" />
+       </label>
+    </td>
+    </tr>
+  <tr>
+    <td>
+    	<label>
+            <span>出行方式 :</span><select name="CXFS">
+            <option value="旅行社组团" <?php echo  set_select('CXFS', '旅行社组团');?> >旅行社组团</option>
+            <option value="个人前往" <?php echo  set_select('CXFS', '个人前往');?> >个人前往</option>
+            </select>
+       </label>
+    </td>
+    <td><label>
+            <span>假期类型 :</span><select name="NJQ">
+            <option value="年休假" <?php echo  set_select('NJQ', '年休假');?> >年休假</option>
+            <option value="探亲假" <?php echo  set_select('NJQ', '探亲假');?> >探亲假</option>
+            <option value="婚假" <?php echo  set_select('NJQ', '婚假');?> >婚假</option>
+            <option value="丧假" <?php echo  set_select('NJQ', '丧假');?> >丧假</option>
+            </select>
+       </label>
+     </td>
+    </tr>
+    
+</table>
+            <p><span style="color:#900">&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="TY" value="1" <?php echo set_checkbox('TY', '1'); ?> />&nbsp;&nbsp;&nbsp;&nbsp;我已熟悉《民警因私出国（境）外出纪律承诺书》具体内容，并严格遵守该规定。</span></p>
+            <div style="color:red; margin-left:10px;">
+              <?php echo validation_errors(); ?>
+            </div>
+
+            <span>&nbsp;</span>
+
+            <input type="submit" class="button" value="确认无误，提交！" />
+            </label>
+            </form> 
+                </td>
+              </tr>
+            </table>
+    	</div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+    </td>
+    </tr>
+</table>
+	
+</div>
+<div id="footer">
+	<p class="foot_text">汕头出入境边防检查总站&nbsp;&nbsp;&nbsp;
+    任何疑问联系总站政治处：88383026</p>
+</div>
+
+</body>
+</html>
